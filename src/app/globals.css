@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  
+  /* Vibrant brand colors matching the logo */
+  --color-brand-orange: #FF6B00;
+  --color-brand-magenta: #E91E8C;
+  --color-brand-purple: #5B21B6;
+  --color-brand-dark: #0F0A1A;
+  --color-brand-gray: #f7f7f8;
+  
+  /* Background gradients - vibrant and electric */
+  --background-image-brand-gradient: linear-gradient(135deg, #FF6B00, #E91E8C, #7C3AED);
+  --background-image-brand-gradient-h: linear-gradient(to right, #FF6B00, #E91E8C, #7C3AED);
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-slate-50 text-slate-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
