@@ -76,15 +76,15 @@ export default function AdminDashboard() {
             <CardDescription>Capacidad vs. Asistencia de los últimos 7 días</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="h-64 mt-4 flex items-end gap-2 justify-between px-2">
+            <div className="mt-4 flex items-end gap-2 sm:gap-3 justify-between">
               {[60, 80, 40, 90, 100, 75, 85].map((val, i) => (
-                <div key={i} className="flex flex-col items-center gap-2 w-full">
-                  <div className="w-full bg-slate-100 rounded-t-sm h-full relative group cursor-pointer flex items-end">
-                    <div 
-                      className="w-full bg-[image:var(--background-image-brand-gradient)] rounded-t-sm transition-all group-hover:opacity-80" 
-                      style={{ height: `${val}%` }} 
+                <div key={i} className="flex flex-col items-center gap-2 flex-1">
+                  <div className="w-full h-52 bg-slate-100 rounded-lg flex items-end overflow-hidden relative group cursor-pointer">
+                    <div
+                      className="w-full bg-[image:var(--background-image-brand-gradient)] rounded-t-lg transition-all group-hover:opacity-80"
+                      style={{ height: `${val}%` }}
                     />
-                    <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="absolute top-2 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs py-1 px-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
                       {val}%
                     </div>
                   </div>
@@ -154,7 +154,7 @@ export default function AdminDashboard() {
                       </td>
                       <td className="p-4 align-middle font-medium text-orange-600">{p.amount}</td>
                       <td className="p-4 align-middle text-right">
-                        <button className="text-xs font-semibold text-[image:var(--background-image-brand-gradient)] bg-clip-text text-transparent border border-orange-200 px-3 py-1 rounded-full hover:bg-orange-50">
+                        <button className="text-xs font-semibold text-orange-600 border border-orange-200 px-3 py-1 rounded-full hover:bg-orange-50 transition-colors">
                           Cobrar
                         </button>
                       </td>

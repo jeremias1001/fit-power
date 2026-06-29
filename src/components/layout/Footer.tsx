@@ -11,18 +11,18 @@ const Facebook = (props: React.SVGProps<SVGSVGElement>) => (
 
 export function Footer() {
   return (
-    <footer className="bg-[#111111] text-slate-300 py-12 lg:py-16">
+    <footer id="contacto" className="bg-[#111111] text-slate-300 py-12 lg:py-16 scroll-mt-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           
           {/* Logo Section */}
           <div className="flex flex-col gap-6">
-            <Image 
-              src="/images/Logo.png" 
-              alt="Fit Power Quilpué" 
-              width={180} 
-              height={60} 
-              className="object-contain h-14 w-auto brightness-0 invert opacity-90"
+            <Image
+              src="/images/logo-cropped.png"
+              alt="Fit Power Quilpué"
+              width={990}
+              height={533}
+              className="object-contain h-16 w-auto brightness-0 invert opacity-95"
             />
             <p className="text-sm text-slate-400">
               © {new Date().getFullYear()} Fit Power Quilpué. Todos los derechos reservados.
